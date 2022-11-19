@@ -974,6 +974,9 @@ const HomeStyle = styled.div`
 
 			.l-side {
 				width: 65%;
+				@media screen and (min-width: 1100px) {
+					width: 75%;
+				}
 				
 				@media screen and (max-width: 900px) {
 					width: 55%;
@@ -994,9 +997,13 @@ const HomeStyle = styled.div`
 						font-size: 1.3pc;
 						line-height: 2pc;
 					}
+					@media screen and (min-width: 1100px) {
+						font-size: 2pc;
+						line-height: 3.5pc;
+					}
 					@media screen and (min-width: 1400px) {
-						font-size: 1.6pc;
-						line-height: 2.6pc;
+						font-size: 2pc;
+						line-height: 3.6pc;
 					}
 				}
 
@@ -1019,6 +1026,13 @@ const HomeStyle = styled.div`
 						line-height: 4pc;
 						padding-bottom: 1pc;
 					}
+
+					@media screen and (min-width: 1100px) {
+						font-size: 4pc;
+						line-height: 5pc;
+						padding-bottom: 1pc;
+					}
+					
 					
 					@media screen and (min-width: 1400px) {
 						font-size: 5pc;
@@ -1048,6 +1062,9 @@ const HomeStyle = styled.div`
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
+				@media screen and (min-width: 1100px) {
+					width: 20%;
+				}
 
 				.pack {
 					text-align: right;
