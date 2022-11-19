@@ -32,6 +32,7 @@ const GlobalStyle = createGlobalStyle`
 /* Fonts Size and Rem selection */
 
 html{
+  background-color: #000;
   font-size: 16px;
 }
 

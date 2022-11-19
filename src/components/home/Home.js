@@ -806,12 +806,45 @@ const HomeStyle = styled.div`
 			/* width: 50%; */
 			padding: 1pc 0;
 			padding-left: 3pc;
+			
+			p {
+				@media screen and (min-width: 1000px) {
+					font-size: 1.3pc;
+					line-height: 2pc;
+				}
+				@media screen and (min-width: 1100px) {
+					font-size: 2pc;
+					line-height: 3.5pc;
+				}
+				@media screen and (min-width: 1400px) {
+					font-size: 2pc;
+					line-height: 3.6pc;
+				}
+			}
 
 			h1 {
 				font-size: 2.8pc;
 				line-height: 3.5pc;
 				padding-bottom: .5pc;
 				
+				@media screen and (min-width: 1000px) {
+					font-size: 3.5pc;
+					line-height: 4pc;
+					padding-bottom: 1pc;
+				}
+				
+				@media screen and (min-width: 1100px) {
+					font-size: 4pc;
+					line-height: 5pc;
+					padding-bottom: 1pc;
+				}
+				
+				@media screen and (min-width: 1400px) {
+					font-size: 5pc;
+					line-height: 6pc;
+					padding-bottom: 1pc;
+				}
+
 				@media screen and (max-width: 900px) {
 					font-size: 2pc;
 					line-height: 3pc;
@@ -935,24 +968,35 @@ const HomeStyle = styled.div`
 			background-size: contain;
 			padding: 2pc;
 			display: flex;
-			justify-content: space-around;
+			justify-content: center;
 			font-family: "DM Sans";
 			width: 100%;
 
 			.l-side {
-				width: 45%;
+				width: 65%;
 				
 				@media screen and (max-width: 900px) {
 					width: 55%;
 				}
 
 				small {
-					opacity: .6;
+					opacity: .8;
 					padding-bottom: 1.5pc;
 					display: block;
 					
 					@media screen and (max-width: 900px) {
 						padding-bottom: .5pc;
+					}
+				}
+
+				p {
+					@media screen and (min-width: 1000px) {
+						font-size: 1.3pc;
+						line-height: 2pc;
+					}
+					@media screen and (min-width: 1400px) {
+						font-size: 1.6pc;
+						line-height: 2.6pc;
 					}
 				}
 
@@ -969,6 +1013,18 @@ const HomeStyle = styled.div`
 					text-fill-color: transparent;
 
 					text-shadow: 0px 10px 10px #000000;
+
+					@media screen and (min-width: 1000px) {
+						font-size: 3.5pc;
+						line-height: 4pc;
+						padding-bottom: 1pc;
+					}
+					
+					@media screen and (min-width: 1400px) {
+						font-size: 5pc;
+						line-height: 6pc;
+						padding-bottom: 1pc;
+					}
 
 					@media screen and (max-width: 900px) {
 						font-size: 2pc;
@@ -1030,10 +1086,12 @@ const HomeStyle = styled.div`
 
 			.spiral {
 				position: absolute;
+				opacity: .7;
 				top: 3pc;
 				left: 0;
 				z-index: -1;
 				width: 10vw;
+				max-width: 100px;
 
 				img {
 					width: 100%;
