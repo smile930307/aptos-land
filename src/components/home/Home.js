@@ -810,7 +810,7 @@ const HomeStyle = styled.div`
 		align-items: center;
 		justify-content: space-between;
 		padding: 1pc 0;
-		max-width: 1500px;
+		max-width: 1920px;
 		width: 100%;
 		margin: 0 auto;
 
@@ -1011,7 +1011,7 @@ const HomeStyle = styled.div`
 		align-items: center;
 		flex-direction: column;
 		padding: 2pc 0;
-		max-width: 1500px;
+		max-width: 1920px;
 		width: 100%;
 		margin: 0 auto;
 
@@ -1220,7 +1220,7 @@ const HomeStyle = styled.div`
 		display: flex;
 		align-items: center;
 		padding: 2pc 0;
-		max-width: 1500px;
+		max-width: 1920px;
 		width: 100%;
 		margin: 0 auto;
 		font-family: "DM Sans";
@@ -1343,7 +1343,7 @@ const HomeStyle = styled.div`
 		align-items: center;
 		flex-direction: column;
 		padding: 2pc 0;
-		max-width: 1500px;
+		max-width: 1920px;
 		width: 100%;
 		margin: 0 auto;
 
@@ -1687,7 +1687,7 @@ const HomeStyle = styled.div`
 		align-items: center;
 		flex-direction: column;
 		padding: 2pc 0;
-		max-width: 1500px;
+		max-width: 1920px;
 		width: 100%;
 		margin: 0 auto;
 		
@@ -1712,6 +1712,7 @@ const HomeStyle = styled.div`
 				font-size: 2pc;
 				padding: 1pc 0;
 				transition: transform .5s;
+				color: #fff;
 				text-decoration: none;
 
 				&:hover {
@@ -1742,7 +1743,7 @@ const HomeStyle = styled.div`
 		align-items: center;
 		flex-direction: column;
 		padding: 2pc 0;
-		max-width: 1500px;
+		max-width: 1920px;
 		width: 100%;
 		margin: 0 auto;
 		
@@ -1774,6 +1775,7 @@ const HomeStyle = styled.div`
 				padding: 1pc;
 				transition: transform .5s;
 				text-decoration: none;
+				color: #fff;
 
 				&:hover {
 					transform: scale(1.2);
@@ -1809,7 +1811,7 @@ const HomeStyle = styled.div`
 		align-items: center;
 		flex-direction: column;
 		padding: 2pc 0;
-		max-width: 1500px;
+		max-width: 1920px;
 		width: 100%;
 		margin: 0 auto;
 		
@@ -1837,7 +1839,7 @@ const HomeStyle = styled.div`
 		/* flex-direction: column; */
 		padding: 2pc 1pc;
 		padding-top: 0;
-		max-width: 1500px;
+		max-width: 1920px;
 		width: 100%;
 		margin: 0 auto;
 
