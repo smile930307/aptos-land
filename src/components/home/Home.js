@@ -903,6 +903,31 @@ const HomeStyle = styled.div`
 						color: #fff;
 					}
 				}
+
+				@media screen and (min-width: 1100px) {
+
+					a.ang-btn {
+						margin-right: 1.5pc;
+						border-radius: .3pc;
+						font-size: 1.3pc;
+
+						.lb-side {
+							padding: .8pc 1pc;
+						}
+
+						.mm-side {
+							border-top: 8px solid transparent;
+							border-bottom: 8px solid transparent;
+							
+							border-left: 8px solid #fff;
+						}
+
+						.rb-side {
+							padding: .8pc 1pc;
+							/* padding: .3pc 0.6pc; */
+						}
+					}
+				}
 			}
 		}
 
