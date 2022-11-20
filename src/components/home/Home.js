@@ -1903,6 +1903,38 @@ const HomeStyle = styled.div`
 				max-width: 450px;
 			}
 		}
+
+		@media screen and (max-width: 900px) {
+			flex-direction: column;
+
+			.end-left {
+				text-align: center;
+				width: 100%;
+				font-size: .9pc;
+				line-height: 1.8pc;
+				padding-bottom: 2pc;
+				
+				.img-ppt {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					padding-bottom: 1pc;
+				}
+			}
+			
+			.end-right {
+				text-align: center;
+				width: 100%;
+				font-size: .9pc;
+				line-height: 1.8pc;
+			}
+			
+			.end-in {
+				width: 100%;
+				padding-bottom: 1.6pc;
+			}
+
+		}
 	}
 
 	@media screen and (max-width: 800px) {
