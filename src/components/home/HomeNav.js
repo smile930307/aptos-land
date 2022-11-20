@@ -166,10 +166,13 @@ const HomeNavStyle = styled.nav`
 					color: #000;
 					text-decoration: none;
 					font-weight: bold;
-					transition: color .5s;
+					transform: scale(1);
+					display: inline-block;
+					transition: color .5s, transform .5s;
 
 					&:hover {
 						color: #0FF0A9;
+						transform: scale(1.2);
 					}
 				}
 			}
@@ -275,9 +278,11 @@ const HomeNavStyle = styled.nav`
 							color: #fff;
 							text-decoration: none;
 							font-weight: bold;
-							transition: color .5s;
+							/* transition: color .5s; */
+							transition: color .5s, transform .5s;
 							
 							&:hover {
+								transform: scale(1.2);
 								color: #000;
 							}
 						}

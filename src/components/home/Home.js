@@ -17,9 +17,9 @@ const Home = () => {
 
 	const socialLinks = {
 
-		twitter: "https://twitter.com/",
+		twitter: "https://twitter.com/AptoslandNFT",
 
-		discord: "https://discord.com/"
+		discord: "https://discord.gg/aptosland"
 
 	}
 
@@ -131,16 +131,19 @@ const Home = () => {
 			id: v4(),
 			title: "Big foot NFT",
 			image: "/images/bigfoot.png",
+			link: "https://twitter.com/BigfootTownNFT"
 		},
 		{
 			id: v4(),
 			title: "Aptosamingos",
 			image: "/images/aptomingos.png",
+			link: "https://twitter.com/Aptomingos"
 		},
 		{
 			id: v4(),
 			title: "Aptosmonkeys",
 			image: "/images/aptomonkeys.png",
+			link: "https://twitter.com/AptosMonkeys"
 		}
 	]
 
@@ -646,7 +649,7 @@ const Home = () => {
 
 				<div className="body">
 
-					{teamInfo.map(item => <div className="char-pack" key={item.id}>
+					{teamInfo.map(item => <a href={item.twitter} target="_blank" rel="noopener noreferrer" className="char-pack" key={item.id}>
 
 						<div className="im">
 
@@ -658,15 +661,15 @@ const Home = () => {
 
 							<p className="name">{item.name}</p>
 
-							<a href={item.twitter} target="_blank" rel="noopener noreferrer">
+							<span>
 
 								<FaTwitter />
 
-							</a>
+							</span>
 
 						</div>
 
-					</div>)}
+					</a>)}
 
 				</div>
 
@@ -686,7 +689,7 @@ const Home = () => {
 
 				<div className="body">
 
-					{metaVerseInfo.map(item => <div className="char-pack" key={item.id}>
+					{metaVerseInfo.map(item => <a href={item.link} target="_blank" rel="noopener noreferrer" className="char-pack" key={item.id}>
 
 						<div className="im">
 
@@ -700,7 +703,7 @@ const Home = () => {
 
 						</div>
 
-					</div>)}
+					</a>)}
 
 				</div>
 
@@ -874,6 +877,12 @@ const HomeStyle = styled.div`
 					text-decoration: none;
 					border-radius: .3pc;
 					overflow: hidden;
+					transition: transform .5s;
+					text-decoration: none;
+
+					&:hover {
+						transform: scale(1.1);
+					}
 
 					.lb-side {
 						display: flex;
@@ -885,13 +894,12 @@ const HomeStyle = styled.div`
 
 					.mm-side {
 						position: absolute;
-						left: 100%;
+						left: 98%;
 						z-index: 5;
 						width: 0; 
 						height: 0; 
 						border-top: 6px solid transparent;
 						border-bottom: 6px solid transparent;
-						
 						border-left: 6px solid #fff;
 					}
 
@@ -916,10 +924,10 @@ const HomeStyle = styled.div`
 						}
 
 						.mm-side {
-							border-top: 8px solid transparent;
-							border-bottom: 8px solid transparent;
+							border-top: 10px solid transparent;
+							border-bottom: 10px solid transparent;
 							
-							border-left: 8px solid #fff;
+							border-left: 10px solid #fff;
 						}
 
 						.rb-side {
@@ -1086,6 +1094,12 @@ const HomeStyle = styled.div`
 					outline: 0 none;
 					text-decoration: none;
 					background: linear-gradient(95.46deg, #0FF0A9 0%, #067E5C 101.07%);
+					transition: transform .5s;
+
+					&:hover {
+						transform: scale(1.1);
+					}
+
 				}
 			}
 
@@ -1674,7 +1688,13 @@ const HomeStyle = styled.div`
 				text-align: center;
 				font-size: 2pc;
 				padding: 1pc 0;
-				
+				transition: transform .5s;
+				text-decoration: none;
+
+				&:hover {
+					transform: scale(1.1);
+				}
+
 				p {
 					font-size: 1.7pc;
 					line-height: 2.5pc;
@@ -1729,7 +1749,13 @@ const HomeStyle = styled.div`
 				text-align: center;
 				font-size: 2pc;
 				padding: 1pc;
-				
+				transition: transform .5s;
+				text-decoration: none;
+
+				&:hover {
+					transform: scale(1.2);
+				}
+
 				p {
 					font-size: 1.3pc;
 					line-height: 2.2pc;
@@ -1808,6 +1834,11 @@ const HomeStyle = styled.div`
 					align-items: center;
 					justify-content: center;
 					padding: .5pc;
+					transition: transform .5s;
+
+					&:hover {
+						transform: scale(1.3);
+					}
 				}
 			}
 		}
