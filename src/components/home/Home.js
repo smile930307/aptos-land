@@ -233,7 +233,7 @@ const Home = () => {
 
 			<HomeNav />
 
-			<section className="intro">
+			<section className="intro" id="intro">
 
 				<div className="l-side">
 
@@ -305,7 +305,7 @@ const Home = () => {
 
 			</section>
 
-			<section className="about">
+			<section className="about" id="about">
 
 				<div className="head">
 
@@ -382,7 +382,7 @@ const Home = () => {
 
 			</section>
 
-			<section className="comming">
+			<section className="comming" id="comming">
 
 				<div className="l-side">
 
@@ -527,7 +527,7 @@ const Home = () => {
 
 			</section>
 
-			<section className="road-map">
+			<section className="road-map" id="road-map">
 
 				<div className="head">
 
@@ -637,7 +637,7 @@ const Home = () => {
 
 			</section>
 
-			<section className="team">
+			<section className="team" id="team">
 
 				<div className="head">
 
@@ -675,7 +675,7 @@ const Home = () => {
 
 			</section>
 
-			<section className="metaverse">
+			<section className="metaverse" id="metaverse">
 
 				<div className="head">
 
@@ -715,7 +715,7 @@ const Home = () => {
 
 			</section>
 
-			<section className="faq">
+			<section className="faq" id="faq">
 
 				<div className="head">
 
@@ -733,7 +733,27 @@ const Home = () => {
 
 			</section>
 
-			<section className="end">
+			<section className="end" id="end">
+
+				<div className="end-left">
+
+					<div className="img-ppt">
+
+						<img src="/images/logo-black.png" alt="Site Logo" />
+
+					</div>
+
+					<div className="txt-ppt">
+
+						Aptos land : Aptos Land is the first ever Metaverse on $Aptos.
+
+						<br />
+
+						That enables the Aptos community with metatools and business opportunities in our metaverse
+
+					</div>
+
+				</div>
 
 				<div className="end-in">
 
@@ -754,6 +774,12 @@ const Home = () => {
 						</a>
 
 					</div>
+
+				</div>
+
+				<div className="end-right">
+
+					Copyright © 2022. Made with <span style={{ color: "red" }}>♥</span> by Aptosland
 
 				</div>
 
@@ -1052,7 +1078,6 @@ const HomeStyle = styled.div`
 					-webkit-background-clip: text;
 					-webkit-text-fill-color: transparent;
 					background-clip: text;
-					text-fill-color: transparent;
 
 					text-shadow: 0px 10px 10px #000000;
 
@@ -1127,7 +1152,6 @@ const HomeStyle = styled.div`
 						-webkit-background-clip: text;
 						-webkit-text-fill-color: transparent;
 						background-clip: text;
-						text-fill-color: transparent;
 
 						text-shadow: 0px 10px 10px #000000;
 
@@ -1251,7 +1275,6 @@ const HomeStyle = styled.div`
 				-webkit-background-clip: text;
 				-webkit-text-fill-color: transparent;
 				background-clip: text;
-				text-fill-color: transparent;
 
 				text-shadow: 0px 10px 10px #000000;
 
@@ -1808,19 +1831,46 @@ const HomeStyle = styled.div`
 
 	section.end {
 		display: flex;
+		align-items: flex-end;
 		align-items: center;
-		flex-direction: column;
-		padding: 2pc 0;
+		justify-content: space-between;
+		/* flex-direction: column; */
+		padding: 2pc 1pc;
 		padding-top: 0;
 		max-width: 1500px;
 		width: 100%;
 		margin: 0 auto;
 
+		.end-left {
+			width: 30%;
+			padding: 0 1pc;
+			text-align: left;
+			font-size: .8pc;
+			line-height: 1.2pc;
+
+			.img-ppt {
+				/* display: none; */
+				padding-bottom: .5pc;
+
+				img {
+					filter: invert(1);
+					width: 120px;
+					object-fit: contain;
+				}
+			}
+		}
+
+		.end-right {
+			width: 30%;
+			padding: 0 1pc;
+			text-align: right;
+			font-size: .8pc;
+			line-height: 1.2pc;
+		}
+
 		.end-in {
-			width: 100%;
-			padding: 1pc;
-			padding-top: 0;
-			padding-bottom: 3pc;
+			width: 30%;
+			padding: 0 1pc;
 			text-align: center;
 
 			.end-icons {

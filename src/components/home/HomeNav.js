@@ -20,27 +20,27 @@ const HomeNav = () => {
 		{
 			id: v4(),
 			text: "HOME",
-			href: "/"
+			href: "#intro"
 		},
 		{
 			id: v4(),
 			text: "ABOUT",
-			href: "/about"
+			href: "#about"
 		},
 		{
 			id: v4(),
 			text: "ROADMAP",
-			href: "/roadmap"
+			href: "#road-map"
 		},
 		{
 			id: v4(),
 			text: "TEAM",
-			href: "/team"
+			href: "#team"
 		},
 		{
 			id: v4(),
 			text: "FAQ",
-			href: "/faq"
+			href: "#faq"
 		},
 
 	]
@@ -52,6 +52,25 @@ const HomeNav = () => {
 		discord: "https://discord.gg/aptosland"
 
 	}
+
+	const scrollHandler = e => {
+
+		e.preventDefault();
+
+		setNavIsOpened(false)
+
+		const hashVal = e.currentTarget.getAttribute('href').split("/").join("")
+
+		window.history.pushState(null, null, `${hashVal}`)
+
+		document.querySelector(hashVal).scrollIntoView({
+
+			behavior: 'smooth'
+
+		});
+
+	}
+
 
 	return (
 
@@ -67,7 +86,7 @@ const HomeNav = () => {
 
 				<ul>
 
-					{siteLinks.map(ll => <li key={ll.id}><Link to={ll.href}>{ll.text}</Link></li>)}
+					{siteLinks.map(ll => <li key={ll.id}><a onClick={scrollHandler} href={ll.href}>{ll.text}</a></li>)}
 
 				</ul>
 
@@ -103,7 +122,7 @@ const HomeNav = () => {
 
 					<ul>
 
-						{siteLinks.map(ll => <li key={ll.id}><Link to={ll.href}>{ll.text}</Link></li>)}
+						{siteLinks.map(ll => <li key={ll.id}><Link onClick={scrollHandler} to={ll.href}>{ll.text}</Link></li>)}
 
 						<li className="li-ic-hol">
 
