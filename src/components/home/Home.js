@@ -1,13 +1,15 @@
 import { useEffect, useRef, useState } from "react"
+
 import { FaCheck, FaDiscord, FaTwitter } from "react-icons/fa"
 
-import { Link } from "react-router-dom"
-
 import styled from "styled-components"
+
 import { v4 } from "uuid"
+
 import { addNumbers } from "../../helpers/Controller"
 
 import HomeNav from "./HomeNav"
+
 import QuestionPack from "./QuestionPack"
 
 
@@ -102,25 +104,25 @@ const Home = () => {
 			id: v4(),
 			name: "ACIE",
 			image: "/images/acie.png",
-			twitter: "https://twitter.com/",
+			twitter: "https://twitter.com/AcieDotEth",
 		},
 		{
 			id: v4(),
 			name: "RYUK",
 			image: "/images/ryuk.png",
-			twitter: "https://twitter.com/",
+			twitter: "https://twitter.com/ryuk_dev",
 		},
 		{
 			id: v4(),
 			name: "FLOFI",
 			image: "/images/flo.png",
-			twitter: "https://twitter.com/",
+			twitter: "https://twitter.com/flofi_dev",
 		},
 		{
 			id: v4(),
 			name: "YOGESH",
 			image: "/images/yog.png",
-			twitter: "https://twitter.com/",
+			twitter: "https://twitter.com/nft_yogesh",
 		},
 	]
 
@@ -198,7 +200,7 @@ const Home = () => {
 			setInitialize(false)
 
 			let runCounters = true
-			
+
 			window.addEventListener("scroll", e => {
 
 				if (isElementInViewport(degensRef.current.parentElement)) {
@@ -252,7 +254,7 @@ const Home = () => {
 
 					<div className="end-btn">
 
-						<Link to={socialLinks.twitter} target={"_blank"} className="ang-btn">
+						<a href={socialLinks.twitter} target="_blank" rel="noopener noreferrer" className="ang-btn">
 
 							<div className="lb-side">
 
@@ -268,9 +270,9 @@ const Home = () => {
 
 							</div>
 
-						</Link>
+						</a>
 
-						<Link to={socialLinks.discord} target={"_blank"} className="ang-btn">
+						<a href={socialLinks.discord} target="_blank" rel="noopener noreferrer" className="ang-btn">
 
 							<div className="lb-side">
 
@@ -286,7 +288,7 @@ const Home = () => {
 
 							</div>
 
-						</Link>
+						</a>
 
 					</div>
 
@@ -327,7 +329,7 @@ const Home = () => {
 
 						</p>
 
-						<button>Whitepaper</button>
+						<a href="https://whitepaper.aptosland.io/" target="_blank" rel="noopener noreferrer">Whitepaper</a>
 
 					</div>
 
@@ -656,11 +658,11 @@ const Home = () => {
 
 							<p className="name">{item.name}</p>
 
-							<Link to={item.twitter}>
+							<a href={item.twitter} target="_blank" rel="noopener noreferrer">
 
 								<FaTwitter />
 
-							</Link>
+							</a>
 
 						</div>
 
@@ -736,17 +738,17 @@ const Home = () => {
 
 					<div className="end-icons">
 
-						<Link target={"_blank"} to={socialLinks.twitter}>
+						<a target="_blank" rel="noopener noreferrer" href={socialLinks.twitter}>
 
 							<FaTwitter />
 
-						</Link>
+						</a>
 
-						<Link target={"_blank"} to={socialLinks.discord}>
+						<a target="_blank" rel="noopener noreferrer" href={socialLinks.discord}>
 
 							<FaDiscord />
 
-						</Link>
+						</a>
 
 					</div>
 
@@ -1046,13 +1048,18 @@ const HomeStyle = styled.div`
 					}
 				}
 
-				button {
+				a {
+					display: inline-block;
+					outline: 0 none;
+					cursor: pointer;
+					padding: 0 .5rem;
 					margin-top: 2pc;
 					padding: .5pc 2pc;
 					border-radius: .3pc;
 					color: #fff;
 					border: 0 none;
 					outline: 0 none;
+					text-decoration: none;
 					background: linear-gradient(95.46deg, #0FF0A9 0%, #067E5C 101.07%);
 				}
 			}

@@ -47,9 +47,9 @@ const HomeNav = () => {
 
 	const socialLinks = {
 
-		twitter: "https://twitter.com/",
+		twitter: "https://twitter.com/AptoslandNFT",
 
-		discord: "https://discord.com/"
+		discord: "https://discord.gg/aptosland"
 
 	}
 
@@ -75,17 +75,17 @@ const HomeNav = () => {
 
 			<div className="ic-hol">
 
-				<Link target={"_blank"} to={socialLinks.twitter}>
+				<a target="_blank" rel="noopener noreferrer" href={socialLinks.twitter}>
 
 					<FaTwitter />
 
-				</Link>
+				</a>
 
-				<Link target={"_blank"} to={socialLinks.discord}>
+				<a target="_blank" rel="noopener noreferrer" href={socialLinks.discord}>
 
 					<FaDiscord />
 
-				</Link>
+				</a>
 
 			</div>
 
@@ -107,17 +107,17 @@ const HomeNav = () => {
 
 						<li className="li-ic-hol">
 
-							<Link target={"_blank"} to={socialLinks.twitter}>
+							<a target="_blank" rel="noopener noreferrer" href={socialLinks.twitter}>
 
 								<FaTwitter />
 
-							</Link>
+							</a>
 
-							<Link target={"_blank"} to={socialLinks.discord}>
+							<a target="_blank" rel="noopener noreferrer" href={socialLinks.discord}>
 
 								<FaDiscord />
 
-							</Link>
+							</a>
 
 						</li>
 

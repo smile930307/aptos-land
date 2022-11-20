@@ -21,6 +21,7 @@ const PageNotFoundStyle = styled.div`
 	align-items: center;
 	justify-content: center;
 	text-align: center;
+	padding: 3pc;
 `
 
 export default PageNotFound
