@@ -157,22 +157,22 @@ const Home = () => {
 		{
 			id: v4(),
 			question: "When is the mint date for Aptos Land going to be?",
-			answer: "Credibly reconceptualize focused bandwidth vis-a-vis mission-critical results. Globally envisioneer customized methods of."
+			answer: "Exact date is also TBA but it will be early december."
 		},
 		{
 			id: v4(),
 			question: "What is the mint price for Aptos Land going to be?",
-			answer: "Collaboratively simplify emerging benefits before cross-unit ROI. Appropriately deliver bleeding-edge collaboration and."
+			answer: "Exact amount is TBA but it will be less than 4 APT."
 		},
 		{
 			id: v4(),
 			question: "What benefits does a genesis pass holder get?",
-			answer: "Synergistically e-enable integrated materials through clicks-and-mortar web services. Assertively enable enabled e-tailers via user-centric customer service. Completely conceptualize interdependent."
+			answer: <>Genesis pass holders will be our highest priority, the benefits for holding our genesis pass can be seen <a href="https://whitepaper.aptosland.io/meta-pass/genesis-pass" target="_blank" rel="noopener noreferrer">here</a>.</>
 		},
 		{
 			id: v4(),
 			question: "What is the purpose of holding multiple passes?",
-			answer: `Monotonectally actualize intuitive manufactured products with go forward "outside the box" thinking. Phosfluorescently reinvent long-term high-impact testing procedures via effective.`
+			answer: `The exact benefits are TBA, what we can say for now is that our current reward model is based on [Reward] PER [NFT Held].`
 		},
 
 	]
