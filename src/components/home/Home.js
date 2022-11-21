@@ -1498,6 +1498,11 @@ const HomeStyle = styled.div`
 				
 				&.exx-caa {
 					/* width: 50%; */
+					.img-hol {
+						img {
+							width: 60%;
+						}
+					}
 				}
 
 				.img-hol {
