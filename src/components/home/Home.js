@@ -179,6 +179,8 @@ const Home = () => {
 
 	const [initialize, setInitialize] = useState(true)
 
+	const [comming, setComming] = useState("sentinel")
+
 	const degensRef = useRef(null)
 
 	const communityRef = useRef(null)
@@ -384,144 +386,342 @@ const Home = () => {
 
 			<section className="comming" id="comming">
 
-				<div className="l-side">
+				<div className="head">
 
-					<div className="img-hol">
+					<h2>Aptos Lands <br /> Bots</h2>
 
-						<img src="/images/stack.png" alt="Stack" />
+					<div className="com-switchs">
+
+						<div className="com-switch" onClick={() => setComming("sentinel")}>
+
+							<img src="/images/co-ham.png" alt="nav ham" />
+
+							<p>Sentinel</p>
+
+						</div>
+
+						<div className="com-switch" onClick={() => setComming("excalibur")}>
+
+							<img src="/images/co-shield.png" alt="nav ham" />
+
+							<p>Excalibur</p>
+
+						</div>
 
 					</div>
 
 				</div>
 
-				<div className="r-side">
+				<div className="body">
 
-					<h1>
+					{(comming === "sentinel") && <>
 
-						Coming Soon:
+						<div className="l-side">
 
-						<br />
+							<div className="img-hol">
 
-						Sentinel
-
-					</h1>
-
-					<p>
-
-						A web based Dapp focused on enabling the Aptos community.
-
-					</p>
-
-					<p className="fe">Features:</p>
-
-					<ul className="features">
-
-						<li>
-
-							<div className="lil-s">
-
-								<FaCheck />
+								<img src="/images/stack.png" alt="Stack" />
 
 							</div>
 
-							<div className="lir-s">
+						</div>
 
-								<h3>Aptos NFT and Twitter Data</h3>
+						<div className="r-side">
 
-								<p>
-									Check how much hype a project has generated on Twitter and
-									compare it with their volume, listed count and floor price.
-								</p>
+							<h1>
+
+								Sentinel.
+
+								<br />
+
+								[Coming Soon]
+
+							</h1>
+
+							<p>
+
+								A web based Dapp focused on enabling the Aptos community.
+
+							</p>
+
+							<p className="fe">Features:</p>
+
+							<ul className="features">
+
+								<li>
+
+									<div className="lil-s">
+
+										<FaCheck />
+
+									</div>
+
+									<div className="lir-s">
+
+										<h3>Aptos NFT and Twitter Data</h3>
+
+										<p>
+											Check how much hype a project has generated on Twitter and
+											compare it with their volume, listed count and floor price.
+										</p>
+
+									</div>
+
+								</li>
+
+								<li>
+
+									<div className="lil-s">
+
+										<FaCheck />
+
+									</div>
+
+									<div className="lir-s">
+
+										<h3>Project Leaderboard</h3>
+
+										<p>
+											Scroll through hundreds of Aptos NFT projects. Filter on listed count,
+											Twitter mentions, velocity, volume and floor price.
+										</p>
+
+									</div>
+
+								</li>
+
+								<li>
+
+									<div className="lil-s">
+
+										<FaCheck />
+
+									</div>
+
+									<div className="lir-s">
+
+										<h3>Top Floor Movers</h3>
+
+										<p>
+											See which projects have increased their floor price the most in a
+											specified timeframe.
+										</p>
+
+									</div>
+
+								</li>
+
+								<li>
+
+									<div className="lil-s">
+
+										<FaCheck />
+
+									</div>
+
+									<div className="lir-s">
+
+										<h3>Market Indicators</h3>
+
+										<p>
+											Total percentage range of the market compared to the previous day,
+											according to: Floor price, total listings and total activity.
+										</p>
+
+									</div>
+
+								</li>
+
+								<li>
+
+									<div className="lil-s">
+
+										<FaCheck />
+
+									</div>
+
+									<div className="lir-s">
+
+										<h3>Smart Money Tracker</h3>
+
+										<p>
+											Smart money inflow and outflow are what highly profitable wallets have
+											been buying or selling within the past day or week.
+										</p>
+
+									</div>
+
+								</li>
+
+							</ul>
+
+						</div>
+
+					</>}
+
+					{(comming === "excalibur") && <>
+
+						<div className="l-side exx-caa">
+
+							<div className="img-hol">
+
+								<img src="/images/excalibur.png" alt="Shield" />
 
 							</div>
 
-						</li>
+						</div>
 
-						<li>
+						<div className="r-side exx-caa">
 
-							<div className="lil-s">
+							<h1>
 
-								<FaCheck />
+								Excalibur
 
-							</div>
+							</h1>
 
-							<div className="lir-s">
+							<p>
 
-								<h3>Project Leaderboard</h3>
+								Aptos Lands' tools that currently support and uplift the different aptos communities.
 
-								<p>
-									Scroll through hundreds of Aptos NFT projects. Filter on listed count,
-									Twitter mentions, velocity, volume and floor price.
-								</p>
+							</p>
 
-							</div>
+							<p className="fe">Bots:</p>
 
-						</li>
+							<ul className="features ex-ca">
 
-						<li>
+								<li className="t-lvl">
 
-							<div className="lil-s">
+									<div className="lil-s">
 
-								<FaCheck />
+										<FaCheck />
 
-							</div>
+									</div>
 
-							<div className="lir-s">
+									<div className="lir-s">
 
-								<h3>Top Floor Movers</h3>
+										<h3>Holder Verification Bot</h3>
 
-								<p>
-									See which projects have increased their floor price the most in a
-									specified timeframe.
-								</p>
+									</div>
 
-							</div>
+								</li>
 
-						</li>
+								<li>
 
-						<li>
+									<div className="lil-s">
 
-							<div className="lil-s">
+										<FaCheck />
 
-								<FaCheck />
+									</div>
 
-							</div>
+									<div className="lir-s">
 
-							<div className="lir-s">
+										<p>Roles based on the NFT collection,</p>
 
-								<h3>Market Indicators</h3>
+									</div>
 
-								<p>
-									Total percentage range of the market compared to the previous day,
-									according to: Floor price, total listings and total activity.
-								</p>
+								</li>
 
-							</div>
+								<li>
 
-						</li>
+									<div className="lil-s">
 
-						<li>
+										<FaCheck />
 
-							<div className="lil-s">
+									</div>
 
-								<FaCheck />
+									<div className="lir-s">
 
-							</div>
+										<p>Roles based on the number of NFT, </p>
 
-							<div className="lir-s">
+									</div>
 
-								<h3>Smart Money Tracker</h3>
+								</li>
 
-								<p>
-									Smart money inflow and outflow are what highly profitable wallets have
-									been buying or selling within the past day or week.
-								</p>
+								<li>
 
-							</div>
+									<div className="lil-s">
 
-						</li>
+										<FaCheck />
 
-					</ul>
+									</div>
+
+									<div className="lir-s">
+
+										<p>Roles based on the rarity [coming soon],</p>
+
+									</div>
+
+								</li>
+
+								<li>
+
+									<div className="lil-s">
+
+										<FaCheck />
+
+									</div>
+
+									<div className="lir-s">
+
+										<p>Roles based on the attributes [coming soon].</p>
+
+									</div>
+
+								</li>
+
+								<li className="t-lvl" style={{ paddingTop: "1pc" }}>
+
+									<div className="lil-s">
+
+										<FaCheck />
+
+									</div>
+
+									<div className="lir-s">
+
+										<h3>Sales Alert Bot</h3>
+
+									</div>
+
+								</li>
+
+								<li>
+
+									<div className="lil-s">
+
+										<FaCheck />
+
+									</div>
+
+									<div className="lir-s">
+
+										<p>Discord alerts</p>
+
+									</div>
+
+								</li>
+
+								<li>
+
+									<div className="lil-s">
+
+										<FaCheck />
+
+									</div>
+
+									<div className="lir-s">
+
+										<p>Twitter alerts</p>
+
+									</div>
+
+								</li>
+
+							</ul>
+
+						</div>
+
+					</>}
 
 				</div>
 
@@ -1224,115 +1424,225 @@ const HomeStyle = styled.div`
 		width: 100%;
 		margin: 0 auto;
 		font-family: "DM Sans";
+		flex-direction: column;
 
-		.l-side {
-			width: 60%;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			
-			.img-hol {
+		.head {
+			text-align: center;
+			padding-bottom: 2pc;
+
+			.com-switchs {
 				display: flex;
 				align-items: center;
 				justify-content: center;
-				width: 80%;
-				/* background-color: #0FF0A9; */
-				background-image: url("/images/stack-side.png");
-				background-position: center;
-				background-size: contain;
-				background-repeat: no-repeat;
-
-				@keyframes bouge {
-					from {
-						transform: translateY(50px);
-					}
-					to {
-						transform: translateY(-50px);
-					}
-				}
+				padding-top: 0.5pc;
 				
-				img {
-					display: block;
-					width: 80%;
-					animation: bouge 5s infinite alternate-reverse ease-in-out;
-					z-index: -1;
-					/* filter: drop-shadow(22px -15px 5px rgba(196, 196, 196, 0.191)); */
-				}
-			}
-		}
-		
-		.r-side {
-			width: 40%;
-			padding-right: 1pc;
-
-			h1 {
-				font-family: Helvetica;
-				font-weight: bold;
-				font-size: 3pc;
-				line-height: 4pc;
-				/* padding-bottom: 1pc; */
-				background: linear-gradient(94.78deg, #FFFFFF 1.7%, rgba(255, 255, 255, 0.865) 100.26%);
-				-webkit-background-clip: text;
-				-webkit-text-fill-color: transparent;
-				background-clip: text;
-
-				text-shadow: 0px 10px 10px #000000;
-
-				@media screen and (max-width: 900px) {
-					font-size: 2pc;
-					line-height: 2.6pc;
-				}
-			}
-
-			ul {
-				list-style-type: none;
-
-				li {
+				.com-switch {
 					display: flex;
-					
-					.lil-s {
-						display: flex;
-						align-items: center;
-						font-size: 2pc;
-						padding-right: .5pc;
+					align-items: center;
+					justify-content: center;
+					flex-direction: column;
+					padding: 1pc;
+					margin: 0 .5pc;
+					background-color: rgba(134, 134, 134, 0.3);
+					border: 1px solid #0BBF8C;
+					min-width: 180px;
+					border-radius: 9px;
+					cursor: pointer;
+					transition: background-color .5s, border .5s, transform .5s;
+
+					&:hover {
+						background-color: #067E5C;
+						border: 1px solid transparent;
+						transform: scale(1.1);
 					}
 
-					.lir-s {
-						line-height: 1.5pc;
-						padding-bottom: 1pc;
+					img {
+						/* width: 35px; */
+						display: block;
+						margin: 0 auto;
+						margin-bottom: .6pc;
+					}
 
-						h3 {
-							font-size: 1pc;
-							line-height: 1.5pc;
-							color: #2ED8A9;
+					@media screen and (max-width: 500px) {
+						min-width: 120px;
+						padding: .8pc;
+
+						img {
+							width: 20%;
 						}
 					}
 				}
 			}
 		}
 
-		@media screen and (max-width: 1000px) {
-			flex-direction: column;
+		.body {
+			display: flex;
+			width: 100%;
+			align-items: center;
 
-	
-			.r-side {
-				width: 80%;
-				padding-right: 0;
-			}		
-
+			@keyframes opacity-animation {
+				from {
+					opacity: 0;
+				}
+				to {
+					opacity: 1;
+				}
+			}
+			
 			.l-side {
-				padding-top: 1.5pc;
-				width: 100%;
+				width: 55%;
 				display: flex;
 				align-items: center;
 				justify-content: center;
+				animation: opacity-animation .5s ease-in 1;
 				
+				&.exx-caa {
+					/* width: 50%; */
+				}
+
 				.img-hol {
 					display: flex;
 					align-items: center;
 					justify-content: center;
 					width: 80%;
-					max-width: 400px;
+					/* background-color: #0FF0A9; */
+					background-image: url("/images/stack-side.png");
+					background-position: center;
+					background-size: contain;
+					background-repeat: no-repeat;
+	
+					@keyframes bouge {
+						from {
+							transform: translateY(50px);
+						}
+						to {
+							transform: translateY(-50px);
+						}
+					}
+					
+					img {
+						display: block;
+						width: 80%;
+						animation: bouge 5s infinite alternate-reverse ease-in-out;
+						z-index: -1;
+						/* filter: drop-shadow(22px -15px 5px rgba(196, 196, 196, 0.191)); */
+					}
+				}
+			}
+			
+			.r-side {
+				width: 45%;
+				padding-right: 1pc;
+				animation: opacity-animation .5s ease-in 1;
+				
+				&.exx-caa {
+					/* width: 50%; */
+				}
+	
+				h1 {
+					font-family: Helvetica;
+					font-weight: bold;
+					font-size: 3pc;
+					line-height: 4pc;
+					/* padding-bottom: 1pc; */
+					background: linear-gradient(94.78deg, #FFFFFF 1.7%, rgba(255, 255, 255, 0.865) 100.26%);
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+					background-clip: text;
+	
+					text-shadow: 0px 10px 10px #000000;
+	
+					@media screen and (max-width: 900px) {
+						font-size: 2pc;
+						line-height: 2.6pc;
+					}
+				}
+
+				.fe {
+					font-size: 1.2pc;
+					padding: .3pc 0;
+				}
+	
+				ul {
+					list-style-type: none;
+
+					&.ex-ca {
+
+						li {
+							
+							.lil-s {
+								font-size: 1.3pc;
+								padding-bottom: 0pc;
+								padding-right: .8pc;
+							}
+							
+							.lir-s {
+								padding-bottom: 0pc;
+								font-style: italic;
+							}
+						}
+
+					}
+	
+					li {
+						display: flex;
+
+						&.t-lvl {
+
+							.lil-s {
+								opacity: 0;
+							}
+
+							.lir-s {
+								font-style: normal;
+							}
+						}
+						
+						.lil-s {
+							display: flex;
+							align-items: center;
+							font-size: 2pc;
+							padding-right: .5pc;
+						}
+	
+						.lir-s {
+							line-height: 1.5pc;
+							padding-bottom: 1pc;
+	
+							h3 {
+								font-size: 1pc;
+								line-height: 1.5pc;
+								color: #2ED8A9;
+							}
+						}
+					}
+				}
+			}
+	
+			@media screen and (max-width: 1000px) {
+				flex-direction: column;
+	
+				.r-side.exx-caa,
+				.r-side {
+					width: 80%;
+					padding-right: 0;
+				}		
+	
+				.l-side.exx-caa,
+				.l-side {
+					padding-top: 1.5pc;
+					width: 100%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					
+					.img-hol {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						width: 80%;
+						max-width: 400px;
+					}
 				}
 			}
 		}
